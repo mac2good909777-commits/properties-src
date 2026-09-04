@@ -37,7 +37,7 @@ properties/               B  成品・GitHub Pages   ← 只有「主題行銷�
 ## 部署
 
 ```
-cd C:\Claude\projects\properties-src
+cd C:\Users\dell\Documents\Claude-DT\projects\20260904-主題行銷頁\properties-src
 git pull --rebase origin main
 git add -A
 git commit -m "新增/更新 <案名>（<PropCode>）"
