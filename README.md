@@ -44,5 +44,5 @@ git commit -m "新增/更新 <案名>（<PropCode>）"
 git push origin main
 ```
 
-本 repo **不啟用 GitHub Pages**，成品網址一律在 `properties`：
+本 repo **不啟用 GitHub Pages**，成品網址一律在成品站（該站無首頁，連結從台帳取）：
 `https://mac2good909777-commits.github.io/properties/<PropCode>/`
