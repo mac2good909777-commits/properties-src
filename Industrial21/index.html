@@ -96,6 +96,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .stats{grid-template-columns:1fr 1fr}
   .grid2,.grid3,.photos,.contact{grid-template-columns:1fr}
 }
+
+.permit-sum{background:#F5F3EE;border:1px solid #E1DFD4;border-radius:5px;padding:22px 24px;margin:26px 0}
+.ps-row{display:flex;gap:16px;padding:12px 0;border-top:1px solid #E7E4DA;font-size:16px;line-height:1.7}
+.ps-row:first-child{border-top:0;padding-top:0}
+.ps-k{flex:0 0 92px;font-weight:700;color:#2B5937}
+.ps-v b{color:#1E2620}
+.ps-note{margin-top:16px;padding-top:14px;border-top:1px solid #E7E4DA;font-size:15px;color:#7A5D0E;line-height:1.75}
+@media(max-width:640px){.ps-row{flex-direction:column;gap:3px}.ps-k{flex:none}}
 </style>
 </head>
 <body>
@@ -139,13 +147,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <h2>核心條件</h2>
     <p class="lead">以下數據依建造執照與地籍資料整理。完整地號明細、權屬結構與環境查核報告，載於完整銷售報告書。</p>
     <div class="grid2">
-      <div class="tablewrap"><table>
-        <tr><th>座落</th><td>臺中市南屯區工業區二十一路</td></tr>
-        <tr><th>地段地號</th><td>文山段 227 地號，共 1 筆</td></tr>
-        <tr><th>使用分區</th><td>乙種工業區</td></tr>
-        <tr><th>土地面積</th><td>2,319 ㎡ ／ 701.49 坪</td></tr>
-        <tr><th>基地寬深</th><td>面寬 34.4 m ・ 縱深 65.5 m</td></tr>
-      </table></div>
+      
       <div class="tablewrap"><table>
         <tr><th>臨路路寬</th><td>10 米</td></tr>
         <tr><th>座向</th><td>座西北朝東南</td></tr>
@@ -165,20 +167,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <p class="eyebrow">BUILDING PERMIT ｜ 本案最大價值</p>
     <h2>建照已核准 2,086 坪樓地板，含第一次變更設計</h2>
-    <p class="lead">一般工業廠房從基地評估、建築設計、都審到取得建造執照，是整個開發流程中最不可控的一段。本案已完成這一段：建造執照 114 中都建字第 00151 號，第一次變更設計於民國 115 年 4 月 29 日經臺中市政府都市發展局核准。</p>
-    <div class="tablewrap">
-      <table class="floors">
-        <tr><th>樓層</th><th>面積（㎡）</th><th>樓高（m）</th><th>核准用途</th></tr>
-        <tr><td>地下 1F</td><td>238.60</td><td>3.70</td><td>防空避難空間、受電室、電機室、樓梯間</td></tr>
-        <tr><td>地上 1F</td><td>1,551.31</td><td>3.60</td><td>C2 作業廠房、停車空間、樓梯間、梯廳</td></tr>
-        <tr><td>地上 2F</td><td>304.34</td><td>3.60</td><td>機械室、樓梯間、梯廳</td></tr>
-        <tr><td>地上 3F</td><td>1,551.33</td><td>5.20</td><td>C2 作業廠房、樓梯間、梯廳</td></tr>
-        <tr><td>地上 4F</td><td>1,551.32</td><td>5.20</td><td>C2 作業廠房、樓梯間、梯廳</td></tr>
-        <tr><td>地上 5F</td><td>1,402.17</td><td>5.20</td><td>C2 作業廠房、樓梯間、梯廳</td></tr>
-        <tr><td>突出物 1–3F</td><td>297.03</td><td>3.00</td><td>樓梯間、機械室</td></tr>
-        <tr><td>總計</td><td>6,896.10</td><td>—</td><td>約 2,086 坪</td></tr>
-      </table>
-    </div>
+    <p class="lead">一般工業廠房從基地評估、建築設計、都審到取得建造執照，是整個開發流程中最不可控的一段。本案已完成這一段 —— 建造執照已核發，並已完成第一次變更設計核准。<b>執照字號、核准日期與全套圖說，於簽署保密後提供。</b></p>
+      <div class="permit-sum">
+        <div class="ps-row"><span class="ps-k">規模</span><span class="ps-v">SC 鋼骨造　地上 5 層＋地下 1 層　核准總樓地板<b> 約 2,086 坪</b></span></div>
+        <div class="ps-row"><span class="ps-k">主力樓層</span><span class="ps-v">1F・3F・4F・5F 核准為 <b>C2 作業廠房</b>，單層約 470 坪級</span></div>
+        <div class="ps-row"><span class="ps-k">樓高</span><span class="ps-v">1F 3.6 m，3F 以上 <b>5.2 m</b>，地下層 3.7 m</span></div>
+        <div class="ps-row"><span class="ps-k">附屬</span><span class="ps-v">地下層配置防空避難、受電室與電機室；2F 機械室</span></div>
+        <div class="ps-note">逐層面積、核准用途明細與建照全套圖說屬業主機密，<b>簽署保密後提供</b>。</div>
+      </div>
+    
     <div class="grid3" style="margin-top:28px">
       <div class="card"><div class="num">構造</div><h3>鋼骨造 SC</h3><p>高耐震、大跨距，適用需要無柱空間的生產動線。最高建築高度 23.7 m，簷高同高。</p></div>
       <div class="card"><div class="num">用途</div><h3>C2 類作業廠房</h3><p>1F、3F、4F、5F 均核准為 C2 作業廠房，適用一般製造業與輕、中工業作業使用。</p></div>
