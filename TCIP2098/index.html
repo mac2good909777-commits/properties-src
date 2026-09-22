@@ -100,6 +100,17 @@ section{padding:76px 0}
 .cl-punch em{color:var(--gold);font-style:normal}
 @media(max-width:820px){.cl-stats{grid-template-columns:1fr 1fr}}
 
+/* evidence cards (WHY) */
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:34px}
+.ev-card{background:#fff;border:1px solid var(--border);border-radius:3px;padding:28px 26px;transition:.25s}
+.ev-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(43,89,55,.10);border-color:rgba(75,135,47,.35)}
+.ev-card .n{font-size:clamp(28px,4vw,34px);font-weight:900;color:var(--forest);line-height:1.1;letter-spacing:.5px}
+.ev-card .n em{font-style:normal;font-size:.5em;margin-left:5px;color:var(--gold);font-weight:900}
+.ev-card h4{font-size:17.5px;font-weight:700;color:var(--ink);margin:12px 0 8px;letter-spacing:.5px}
+.ev-card p{font-size:14.5px;color:var(--muted);line-height:1.8}
+.ev-src{text-align:center;font-size:13px;color:var(--muted);margin:-14px 0 30px;letter-spacing:.5px}
+@media(max-width:820px){.ev-grid{grid-template-columns:1fr}}
+
 .acc-map{background:#F5F3EE;border-radius:3px;padding:10px;margin-bottom:22px}
 .acc-dist{background:#fff;border:1px solid var(--border);border-radius:3px;padding:18px 10px 8px}
 .scarcity{margin-top:34px;background:linear-gradient(135deg,rgba(43,89,55,.06),rgba(192,164,52,.07));
@@ -282,15 +293,27 @@ footer .disc{max-width:760px;margin:0 auto 10px;line-height:1.8;color:rgba(255,2
     <div class="sec-head">
       <div class="en">WHY TAICHUNG INDUSTRIAL PARK</div>
       <h2>離台中市中心最近的大型合法工業聚落</h2>
-      <div class="lead">台中工業區是中部最早成熟的綜合工業區——公共設施完備、產業聚落成型，而區內的空地，正在一塊一塊消失。</div>
+      <div class="lead">台中工業區是中部最早成熟的綜合工業區，本身就是 1,086 家工廠、4.4 萬名從業人員的製造腹地；北接中科台中園區、南鄰精密機械科技創新園區，沿大肚山科技走廊串起半導體、光電與工具機三條供應鏈。<b>公共設施完備、協力聚落成型</b>，而區內能整筆釋出的空地，正在一塊一塊消失。</div>
     </div>
 
-    <div class="cl-stats">
-      <div class="cl-stat"><div class="v">都會近郊</div><div class="k">緊鄰台中市中心與東海商圈</div></div>
-      <div class="cl-stat"><div class="v">約 3<small> KM</small></div><div class="k">國道 1 號 台中交流道</div></div>
-      <div class="cl-stat"><div class="v">12<small>/12</small></div><div class="k">災害潛勢查詢均為「無」</div></div>
-      <div class="cl-stat"><div class="v">素地</div><div class="k">零拆除成本・可立即規劃</div></div>
+    <div class="ev-grid">
+      <div class="ev-card">
+        <div class="n">1,086<em>家工廠</em></div>
+        <h4>園區本身就是製造腹地</h4>
+        <p>台中產業園區開發面積 582 公頃、工業用地 374 公頃，區內 1,086 家工廠、從業員工約 4 萬 4 千人，登記資本額約 6,849 億元。機加工、表面處理與協力廠就在同一園區內，不必跨區找。</p>
+      </div>
+      <div class="ev-card">
+        <div class="n">約 200<em>家</em></div>
+        <h4>南鄰精密機械科技創新園區</h4>
+        <p>精科園區一、二期約 161 公頃、約 200 家廠商進駐，大立光電、上銀科技、台中精機均在此設廠；該園區北側即與台中產業園區相鄰，工具機與精密機械的整條供應鏈就在同一生活圈。</p>
+      </div>
+      <div class="ev-card">
+        <div class="n">1.13<em>兆元</em></div>
+        <h4>北接中科台中園區</h4>
+        <p>中科台中園區 2025 年營業額約 1 兆 1,303 億元，七年間增加逾 4,000 億元，積體電路為主要成長動能。沿大肚山科技走廊北上，半導體與光電的設備、機構件需求就在半小時圈內。</p>
+      </div>
     </div>
+    <div class="ev-src">資料來源：經濟部產業園區管理局臺中分局、臺中市政府經濟發展局、中部科學園區管理局公開資訊。</div>
 
     <div class="cl-copy">
       <p>台中工業區是經濟部開發的老牌綜合工業區，也是<b>離台中市中心最近的大型合法工業聚落</b>——台中精機、永進機械等指標廠商在此深耕數十年，園區道路、供水供電、污水處理等公共設施早已到位，<span class="cl-key">不必等開發、不必等公設，買到就能規劃</span>。</p>
