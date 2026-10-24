@@ -12,12 +12,15 @@ properties/               B  成品・GitHub Pages   ← 只有「主題行銷�
 
 ## 各專案要做的
 
-1. 目錄命名 `PropCode`：地名英拼＋關鍵數字，例 `WangTian5483`、`Guanlian766`、`TCIP3464`。
-   潛銷案再加 `-` 四碼亂碼，例 `ct1300-e58a`。
-   **不要用結尾 `b` 或 `-b`** —— 那是成品端簡版分身保留的。
-2. 放一份自足的 `<PropCode>/index.html`：照片 base64 內嵌、外部相依只允許 Google Fonts。
-3. 一經上線 **不改名、不刪除、不搬家**（連結已發出去，斷了就是客戶開到 404）。
-4. push 到本 repo，然後到「主題行銷頁」對話說一聲「更新 `<PropCode>`」。
+1. **一案一個 `.html` 檔，直接放在本 repo 根目錄，用案名命名**（不開子資料夾），
+   例 `王田5483.html`、`關連三照合法美廠房.html`。檔名去掉空白。（2026-10-24 起）
+2. 檔案要自足：照片 base64 內嵌、外部相依只允許 Google Fonts。
+3. 另取一個 `PropCode` 當**成品網址**：地名英拼＋關鍵數字，例 `WangTian5483`、`Guanlian766`。
+   潛銷案再加 `-` 四碼亂碼，例 `ct1300-e58a`。**不要用結尾 `b`／`c` 或 `-b`／`-c`**（簡版與同事版保留）。
+   原稿檔名與 PropCode 的對應記在 `properties-admin/cases.json` 的 `src` 欄。
+4. **成品網址一經上線不改名、不刪除、不搬家**（連結已發出去，斷了就是客戶開到 404）。
+   原稿檔名可以改，改了同步更新 `cases.json` 的 `src` 即可。
+5. push 到本 repo，然後到「主題行銷頁」對話說一聲「更新 `<案名>`」。
 
 ## 各專案「不要」做的
 
@@ -36,11 +39,13 @@ properties/               B  成品・GitHub Pages   ← 只有「主題行銷�
 
 ## 部署
 
+本機資料夾名稱是 `A原稿`（GitHub repo 名稱仍是 `properties-src`）：
+
 ```
-cd C:\Users\dell\Documents\Claude-DT\projects\20260904-主題行銷頁\properties-src
+cd C:\Users\dell\Documents\Claude-DT\projects\20260904-主題行銷頁\A原稿
 git pull --rebase origin main
 git add -A
-git commit -m "新增/更新 <案名>（<PropCode>）"
+git commit -m "新增/更新 <案名>"
 git push origin main
 ```
 
